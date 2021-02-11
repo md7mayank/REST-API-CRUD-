@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>RESTful api</title>
+  </head>
+  <body><div class="read">
+    <p>READ(show all users)</p>
+    <form action="/api/people" method="get">
+      <button type="submit">press the button to see all the people</button>
+    </form>
+  </div>
+    <div class="create">
+      <p>CREATE(create new user)</p>
+      <form action="/api/people" method="post">
+        <input type="text" name="name" placeholder="please enter your name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="please enter your email"
+          required
+        />
+        <label for="button">To add new user</label>
+        <button type="submit" name="button">+</button>
+      </form>
+    </div>
+  </body>
+</html>
